@@ -1,0 +1,142 @@
+#container{
+    width:390px;height:98%;
+    background-color:#ffeabf;
+    padding:5px;
+    margin-top:-5px;
+    margin-left:-5px;
+
+}
+#piececontainer_outside{
+    width:100%;height:180px;
+    overflow:auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5px;
+}
+#subcontainer{
+    width:380px;height:575px;
+ /*  background-color:#ffdfaa;*/
+    margin-left:0px;
+    margin-right:0px;
+
+
+   /* background-image:url("https://cdn-ak.f.st-hatena.com/images/fotolife/a/altimos-unizer/20230414/20230414122323.png");
+    background-size:cover;*/
+}
+#map_image{
+    width:100%;height:100%;
+    object-position:0px 0px;
+    object-fit:cover;
+}
+#piececontainer{
+    height:170px;
+    display:flex;
+    justify-content:space-around;
+    background-color:#bfffff;
+    overflow-x:auto;
+
+
+}
+.piece_flame{
+    width:65px;height:140px;
+    background-color: #eaffff;
+    margin-right:5px;
+    
+}
+.piece_flame div{
+    margin-left:auto;
+    margin-top:auto;
+    margin-right:auto;
+    margin-bottom:auto;
+    transition-duration:.5s;
+    transition-property:transform;
+    border-radius:3px;
+    
+}
+.piece_flame span {
+    margin-top:5px;
+    font-size:10px;
+    font-weight:bold;
+    color: #000; text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px -1px 0 #FFF, 0px 1px 0 #FFF, 0 -1px 0 #FFF, -1px 0 0 #FFF, 1px 0 0 #FFF;
+    text-align:center;
+}
+.piece_flame div div{
+    background-size:cover;
+}
+map{
+
+}
+.piece_name_div{
+    position:absolute;font-size:3px;font-weight:bold;color: #000;text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px -1px 0 #FFF, 0px 1px 0 #FFF, 0 -1px 0 #FFF, -1px 0 0 #FFF, 1px 0 0 #FFF;background-color:#5b5b5b8a;
+
+}
+#clock_div{
+    position:absolute;
+    top:0px;left:0px;
+    width:150px;height:40px;
+    background-color:#3b3b3b;
+    color:white;
+    font-size:30px;
+    font-weight: bold;
+    border-radius:5px;
+}
+#start_div{
+    width:50%;height:50px;
+    position:absolute;
+    top:50%;left:25%;
+    text-align:center;
+    background-color:#55d5ff;
+    color:#ffffff;
+    font-size:40px;
+    font-weight:bold;
+    box-shadow: 0 5px 5px 0 #5e5e5e;
+    border-radius:5px;
+    
+    animation-name:opening-animation;
+    animation-iteretion-count:1;
+    animation-duration:3s;
+    animation-timing-function:ease-in;
+    animation-fill-mode:forwards;
+}
+@keyframes opening-animation{
+    0%{
+        transform:scale(1.0);
+    }
+    50%{
+        transform:scale(1.5);
+    }
+ 
+
+    100%{
+
+        transform:scale(0.5)translateY(-850px);
+        visibility:hidden;
+    }
+    
+    
+}
+#letter_bt_div{
+    position:absolute;
+    top:0px;right:0px;
+    width:100px;height:30px;
+    
+}
+#letter_bt_div button{
+    width:92px;height:30px;
+    border-radius:15px;
+    background-color:#caffaa;
+    color:#ffaaca;
+    font-size:10px;font-weight:bold;
+    
+}
+map{
+    z-index:5;
+}
+#insert_map img{ 
+z-index:3;
+pointer-events:none;
+}
+#subcontainer .piece_name_div{
+    z-index:4;
+    pointer-events:none;
+}
